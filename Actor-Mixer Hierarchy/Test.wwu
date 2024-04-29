@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E4A4768C-9052-4251-8A15-B32FD71C7362}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Test" ID="{E4A4768C-9052-4251-8A15-B32FD71C7362}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Test" ID="{76CDA2D9-DC0A-4DC3-997F-0D2E5E76E4B6}" ShortID="1037575660">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{74DBE916-6D75-4EAF-8120-94C917753E01}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D37D46B1-720E-4352-B4FA-F1223E8F0C8B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="test_300hz_1s" ID="{F36B7655-64CB-4FF8-8D7F-6295DC630FD9}" ShortID="598788366">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{74DBE916-6D75-4EAF-8120-94C917753E01}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D37D46B1-720E-4352-B4FA-F1223E8F0C8B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Synth One" ID="{5405ACCA-28D8-4182-93DD-B9F658A84782}" ShortID="1045177194" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="BaseFrequency" Type="Real32" Value="300"/>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{26BA5805-C986-4270-B542-8DAF61ABF861}" ShortID="677494080">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<Custom>
+																	<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{61F08F18-EE23-4284-9187-7A2CBD97FBB6}" ShortID="206915675">
+																		<PropertyList>
+																			<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.031"/>
+																			<Property Name="EnvelopeAutoRelease" Type="bool" Value="True"/>
+																			<Property Name="EnvelopeReleaseTime" Type="Real64" Value="1"/>
+																		</PropertyList>
+																	</ModulatorEnvelope>
+																</Custom>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{88B31E89-32CE-4131-8E07-3AB9F7959951}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Synth One" ID="{5405ACCA-28D8-4182-93DD-B9F658A84782}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
