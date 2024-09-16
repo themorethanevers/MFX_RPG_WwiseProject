@@ -6,6 +6,7 @@
 				<SoundBank Name="TestBank" ID="{FA0C3D35-6BD5-4737-A32C-2E646DE70FC7}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_test_300hz_1s" ID="{A0BF8CFB-539A-4DB4-B668-460A265309FC}" WorkUnitID="{ACB27BDD-550D-4A6B-8510-54C53412DFAA}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_rick_ross" ID="{D3189367-A5A6-4EA7-9896-86E71A8C0617}" WorkUnitID="{709152DC-F0CC-4A6E-B0E9-F330F777FB4E}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

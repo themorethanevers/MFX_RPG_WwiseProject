@@ -88,6 +88,28 @@
 								<ActiveSource Name="Synth One" ID="{5405ACCA-28D8-4182-93DD-B9F658A84782}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="rick-ross" ID="{5A79B3A1-9217-4A2F-8673-97880250DB51}" ShortID="608719999">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{74DBE916-6D75-4EAF-8120-94C917753E01}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D37D46B1-720E-4352-B4FA-F1223E8F0C8B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="rick-ross-mom-text" ID="{4E73029F-D50F-4294-A47C-7D0D810BB150}">
+									<Language>SFX</Language>
+									<AudioFile>rick-ross-mom-text.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="57332573"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="rick-ross-mom-text" ID="{4E73029F-D50F-4294-A47C-7D0D810BB150}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
